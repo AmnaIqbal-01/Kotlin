@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "807153066187",
+    "project_id": "authenticationdemo-f14cd",
+    "storage_bucket": "authenticationdemo-f14cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807153066187:android:d292603993e69bfbabfb4e",
+        "android_client_info": {
+          "package_name": "com.example.authenticationdemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcu1X1cgN3D3R6ZbNrMdKyF3IoswpcOpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
