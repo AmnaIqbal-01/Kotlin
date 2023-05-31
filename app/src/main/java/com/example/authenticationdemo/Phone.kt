@@ -36,11 +36,11 @@ class Phone : AppCompatActivity() {
 
 
         binding.sendopt.setOnClickListener {
-            var number = binding.number.text.toString()
+             number = binding.phonenumber.text.toString()
             if (number.isNotEmpty()) {
                 if (number.length == 10) {
-                    number = "+92$number"
-                    mProgressBar.visibility = View.VISIBLE
+                    number= "+92$number"
+                  //   binding.progressBar.visibility = View.VISIBLE
                     val options = PhoneAuthOptions.newBuilder(auth)
                         .setPhoneNumber(number)       // Phone number to verify
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
@@ -115,12 +115,13 @@ class Phone : AppCompatActivity() {
             // now need to ask the user to enter the code and then construct a credential
             // by combining the code with a verification ID.
             // Save verification ID and resending token so we can use them later
-            val intent = Intent(this@Phone, OPT::class.java)
+
+            val intent =Intent(this@Phone,OPT::class.java)
             intent.putExtra("OTP" , verificationId)
             intent.putExtra("resendToken" , token)
             intent.putExtra("phoneNumber" , number)
             startActivity(intent)
-            mProgressBar.visibility = View.INVISIBLE
+          binding.progressBar.visibility = View.INVISIBLE
         }
     }
 //    override fun onStart() {
